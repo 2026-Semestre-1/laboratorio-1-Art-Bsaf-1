@@ -75,7 +75,7 @@ Salida: La suma total de los números desde el parámetro inicio hasta el fina.
 Restricciones: Todos parámetros deben ser de tipo entero, Los párametros distancia y excepcion debe ser menor a 10 y mayor a 0,
                         Los valores de inicio y fin deben ser positivos.
 """
-def sumatoria_V2(inicio, fin, distancia, excepcion):
+def sumatoria_V2(inicio, fin, distancia, excepcion): # Está función hace todas las validaciones y luego llama a la función auxiliar 
 
     if not isinstance(inicio, int):
         return "ERROR: El valor inicio no es un número entero."
@@ -123,11 +123,11 @@ def sumatoria_V2_aux(inicio, fin, distancia, excepcion):
     count = inicio
     res = 0
 
-    if distancia > 0:
+    if distancia > 0: #se valida para saber si distancia es positivo 
         
         while count <= fin:
 
-            if excepcion == 0 or  count % excepcion != 0:
+            if excepcion == 0 or  count % excepcion != 0: # se hace una verificación para ver si el número en count no sea divisible por la excepción o que excepción sea 0
                 res += count
 
             count += distancia
