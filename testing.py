@@ -52,17 +52,13 @@ def test_lab_19():
     assert Laboratorio01.sumatoria_V2(10, 8, -1, 0)  == 27
     
 def test_lab_20():
-    assert isinstance(Laboratorio01.sumatoria_V2(10, 5, 3, 2), str)  == 
-isinstance("Error: el parámetro inicio debe ser menor o igual a fin", str)
+    assert isinstance(Laboratorio01.sumatoria_V2(10, 5, 3, 2), str)  == isinstance("Error: el parámetro inicio debe ser menor o igual a fin", str)
 
 def test_lab_21():
-    assert isinstance(Laboratorio01.sumatoria_V2(10, 15, -3, 2), str)  == 
-isinstance("Error: El parámetro de fin debe ser menor o igual a inicio", str)
+    assert isinstance(Laboratorio01.sumatoria_V2(10, 15, -3, 2), str)  == isinstance("Error: El parámetro de fin debe ser menor o igual a inicio", str)
 
 def test_lab_22():
-    assert isinstance(Laboratorio01.sumatoria_V2("10", 15, -3, 2), str)  == 
-isinstance("Error: Los parámetros deben ser enteros", str)
+    assert isinstance(Laboratorio01.sumatoria_V2("10", 15, -3, 2), str)  == isinstance("Error: Los parámetros deben ser enteros", str)
 
 def test_lab_23():
-    assert isinstance(Laboratorio01.sumatoria_V2(10, 15, 10, 2), str)  == 
-isinstance("Error: El parámetro distancia debe estar en 1 a 9", str)
+    assert isinstance(Laboratorio01.sumatoria_V2(10, 15, 10, 2), str)  == isinstance("Error: El parámetro distancia debe estar en 1 a 9", str)
